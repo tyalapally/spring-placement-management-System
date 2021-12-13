@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>EDUSITE</title>
+<style>
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+font-family: cursive;
+ background:url("images/index.jpg")no-repeat;
+ background-size:cover;
+
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+h1{
+text-align:center;
+color:black;
+}
+h3{
+text-align:center;
+color:black;
+}
+div{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">EDUSITE</div>
+     <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+        
+         <li><a th:href="@{/sLogin}">Student Login</a></li>
+         <li><a th:href="@{/alogin}" >Admin Login</a></li>
+         
+       </div>
+     </ul>
+   </nav>
+
+   <br><br>
+    <h1><B>WELCOME TO EDUSITE JOB PORTAL</B></h1>
+    <br>
+    <h2 style="text-align:center;color:blue;font-style:italic;">EDUSITE is India's leading Workforce Development Platform that helps learners in building careers with leading corporates through training & other career building services.EDUSITE is an Integrated Workforce Development Organization started by IIM alumni & professors in October 2009, EDUSITE impacts
+      the entire Career Development life cycle of the unemployed youth of the country. We help the unemployed youth to understand their strengths, build tomorrow’s skills<br>
+       needed by recruiters and secure employment with them, thereby building sustainable careers for our beneficiaries.</h2>
+       <br>
+     <h2 style="text-align:center;color:orange;">“Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.”</h2>
+     <br>
+     <br>
+     <h3> For Queries Contact <br>
+     Phone - +91 34568325678<br>
+     E-mail id - edusite123@gmail.com
+     </h3>
+     <br><br>
+     <br><br>
+     <br><br>
+     <hr>
+     <div class="col-md-3 ftr-logo">
+    <B>  © Copyright - 2021 EDUSITE</B>
+    </div>
+</body>
+</html>

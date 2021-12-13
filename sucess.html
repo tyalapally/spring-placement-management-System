@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>EDUSITE</title>
+ </head>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+ background-image:url('image4.jpg');
+         background-size:cover;
+          height: 650px; 
+          background-position: center ; /* Center the image */
+  background-repeat: no-repeat; 
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+
+h2{
+text-align:center;
+font-style:italic;
+}
+div{
+text-align:center;
+}
+a{
+text-align:center;
+}
+ </style>
+ <body>
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">Student Dashboard</div>
+    
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       
+       <!-- NAVIGATION MENUS -->
+      
+     </ul>
+   </nav>
+   
+    <br><br>
+    <br><br>
+    <h2 style="color:green;text-align:center;">Applied Successfully</h2>
+    
+    
+    <br><br>
+     
+     <div style="text-align:center;color:blue;">    
+  <a th:href="@{/sdashboard}">Back to Student Dashboard</a>
+  <!-- more links here -->
+</div>
+     
+     <br><br>
+     <br><br>
+     <br><br>
+     <hr>
+     <div class="col-md-3 ftr-logo">
+    <B>  © Copyright - 2021 EDUSITE</B>
+    </div>
+ </body>
+</html>
